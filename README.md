@@ -18,6 +18,8 @@ Switch to the pulumi-iac directory:
 cd pulumi-iac
 ```
 
+Make sure you add your public IP address in the Pulumi.eks-pulumi-iac.yaml file.
+
 Preview the changes:
 
 ```bash

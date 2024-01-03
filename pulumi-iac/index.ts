@@ -3,6 +3,10 @@ import * as eks from "@pulumi/eks";
 import * as k8s from "@pulumi/kubernetes";
 import * as pulumi from "@pulumi/pulumi";
 
+//Let us pull in some variables from the stack yaml file
+let config = new pulumi.Config("localconfig");
+const cidrIP = config.require("cidrIP");
+
 //Let's name the kubernetes cluster
 const kubeClusterName = 'eks-cluster';
 
