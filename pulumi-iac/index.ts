@@ -44,7 +44,7 @@ const cluster = new eks.Cluster(
         skipDefaultNodeGroup: true,
         //Define the CIDR block that can access the kube API
         publicAccessCidrs: [
-            "92.63.242.142/32",
+            cidrIP,
         ],
         roleMappings: [
             {
