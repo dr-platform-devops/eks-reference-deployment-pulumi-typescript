@@ -4,6 +4,17 @@
 
 This is a reference deployment of a simple EKS cluster with Pulumi using Typescript. This guide assumes some know-how with Pulumi and AWS.
 
+## Deployment overview
+
+- EKS Cluster
+- Roles, Policies and Role Attachments
+- EKS Addons: VPC, CoreDNS, EBS driver, Kube Proxy
+- A Node Group for the EKS cluster
+- Autoscaling for the cluster
+- Argo CD helm chart
+
+Please check the comments inline for more details.
+
 ## Quick start
 
 ### AWS Credentials
